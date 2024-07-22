@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #d2d25f; /* Kuning */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #228b22; /* Hijau gelap */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #ffcc00; /* Kuning */
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ffd633; /* Kuning lebih terang */
+        }
+
+        #about {
+            text-align: center;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        #about h2 {
+            color: #ffcc00; /* Kuning */
+        }   
+
+        #about p {
+            color: #336600; /* Hijau */
+        }
+
+        .about-images, .portofolio-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Jarak antara gambar */
+        }
+
+        .about-images img, .portofolio-images img {
+            width: 45%; /* Atur lebar gambar agar tidak terlalu besar */
+            height: auto;
+            border-radius: 10px; /* Sudut gambar melengkung */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bayangan untuk efek visual */
+        }
+
+        #portofolio {
+            text-align: center;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        #portofolio h2{
+            color: #ffcc00;
+        }
+
+        #portofolio img {
+            width: 30%; /* Memperkecil lebar gambar portofolio */
+            height: auto; /* Atur tinggi secara otomatis agar proporsi tetap */
+            border-radius: 10px; /* Sudut gambar melengkung */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bayangan untuk efek visual */
+            margin-top: 20px; /* Jarak atas untuk gambar */
+        }
+
+        #projects ul, #blog ul, #info-center ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #projects li, #blog li, #info-center li {
+            margin-bottom: 20px;
+        }
+
+        #projects img {
+            width: 30%; /* Memperkecil lebar gambar portofolio */
+            height: auto; /* Atur tinggi secara otomatis agar proporsi tetap */
+            border-radius: 10px; /* Sudut gambar melengkung */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bayangan untuk efek visual */
+            margin-top: 20px; /* Jarak atas untuk gambar */
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact input, #contact textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #contact button[type="submit"] {
+            background-color: #228b22; /* Hijau gelap */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #contact button[type="submit"]:hover {
+            background-color: #32cd32; /* Hijau lebih terang */
+        }
+
+        footer {
+            background-color: #228b22; /* Hijau gelap */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer li {
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            #about img {
+                width: 75%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #about img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Haditya Deka Pratama</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Personal Website</h2>
+            <p>This is where you can learn more about me and my work.</p>
+            <button>Learn More</button>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Saya seorang mahasiswa Universitas Muhammadiyah Riau, program studi Teknik Informatika di Fakultas Ilmu Komputer.
+                 Selain fokus pada akademik, saya juga bekerja sebagai barista. Menggabungkan pengetahuan teknologi dengan kreativitas di dunia kopi memberi
+                  saya perspektif unik dan kemampuan multitasking yang kuat.</p>
+            <div class="about-images">
+                <img src="image/talent.jpg" alt="Profile Picture">
+                <img src="image/baristaa.jpg " alt="Barista">
+            </div>
+        </section>
+        <section id="portofolio">
+            <h2>Portofolio</h2>
+            <p>Pemateri untuk Sosialisasi Mengenai Penting nya Cyber Security pada Tingkat SMA di Sekolah Menengah Atas Tri Bakti</p>
+            <img src="image/pemateri.jpg" alt="Portofolio Image">
+            <p>Latte Art</p>
+            <div class="portofolio-images">
+                <img src="image/latte1.jpg" alt="Portofolio Image">
+                <img src="image/latte2.jpg" alt="Portofolio Image">
+                <img src="image/latte3.jpg" alt="Portofolio Image">
+            </div>
+        </section>
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <h3>Talent and Brand Ambassador Universitas Muhammadiyah Riau</h3>
+            <p>November 2023 - Now</p>
+            <h3>Barista at Sudut Kompleks Coffee</h3>
+            <p>Januari 2024 - Now</p>
+            <h3>You can download my CV <a href="cv.pdf" target="_blank">here</a>.</h3>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>
+                    <img src="image/pemateri.jpg" alt="Project 1">
+                    <h3>Sosialisasi Pentingnya Cyber Security pada Tingkat SMA di Sekolah Menengah Atas Tri Bakti </h3>
+                    <p>Pada proyek ini, saya menjadi pemateri dalam sebuah acara sosialisasi yang diadakan di Sekolah Menengah Atas Tri Bakti. Kegiatan ini bertujuan untuk meningkatkan kesadaran siswa tentang pentingnya cyber security di era digital.</p>
+                    <p>Selama sosialisasi, saya menyampaikan materi mengenai berbagai ancaman keamanan siber, seperti phishing, malware, dan serangan DDoS, serta bagaimana cara melindungi diri dari ancaman-ancaman tersebut.</p>
+                    <p>Selain itu, saya juga memberikan tips praktis tentang penggunaan kata sandi yang kuat, pentingnya menjaga kerahasiaan informasi pribadi, dan cara mengenali email atau situs web yang mencurigakan.</p>
+                    <p> Kegiatan ini mendapat respons positif dari para siswa, yang menunjukkan minat dan keingintahuan yang tinggi terhadap topik yang dibahas. Mereka aktif berpartisipasi dalam sesi tanya jawab dan diskusi. </p>
+                    <p>Saya berharap melalui sosialisasi ini, para siswa dapat lebih waspada dan bijak dalam menggunakan teknologi serta internet di kehidupan sehari-hari. .</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Informasi kontak</p>
+            <ul>
+                <li><a href="https://www.facebook.com/haditya.deka.5/" target="_blank">
+                   <img src="image/fb.png" alt="Facebook" style="width: 50px; height: auto;">
+                </a></li>
+                <li><a href="https://www.instagram.com/hadityadekaa/" target="_blank">
+                    <img src="image/ig.png" alt="Instagram" style="width: 50px; height: auto;">
+                </a></li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Haditya Deka Pratama</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
